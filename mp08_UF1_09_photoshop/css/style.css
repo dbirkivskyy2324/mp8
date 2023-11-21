@@ -1,0 +1,81 @@
+body::before{
+    position: relative;
+    margin: auto;
+    content: "Ps";
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 150px;
+    text-align: center;
+    color: skyblue;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: midnightblue;
+    border-radius: 30px;
+}
+
+.efecte{
+    width: 150px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.imatge{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    background-image: url(../img/higos.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contenidor{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.blur .imatge{
+    filter: blur(5px);
+}
+
+.brightness .imatge{
+    filter: brightness(2);
+}
+
+.contrast .imatge{
+    filter: contrast(250%);
+}
+
+.shadow .imatge{
+    filter: drop-shadow(10px 5px 10px purple);
+}
+
+.grayscale .imatge{
+    filter: grayscale(100%);
+}
+
+.tone .imatge{
+    filter: hue-rotate(90deg);
+}
+
+.invert .imatge{
+    filter: invert();
+}
+
+.opacity .imatge{
+    filter: opacity(70%);
+}
+
+.saturation .imatge{
+    filter: saturate(150%);
+}
+
+.sepia .imatge{
+    filter: sepia();
+}

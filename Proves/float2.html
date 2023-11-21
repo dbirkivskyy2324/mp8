@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float_2</title>
+
+    <style>
+
+        body{
+            margin: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        *, *:after, *:before{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navegacio{
+        
+            width: 40%;
+            margin: auto;
+            
+        }
+
+        .primernivell{
+            background: rgba(191, 145, 255, 0.743);
+            color: white;
+            margin: 0.5rem;
+            display: inline-block;
+            padding: 0.25rem;
+            height: 2rem;
+            position: relative;
+        }
+
+        .primernivell:hover{
+            background: orange;
+            
+        }
+
+        .primernivell:hover > .secundari{
+            display: block;
+            
+        }
+
+        .secundari{
+            display: block;
+            background: green;
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+            display: none;
+        }
+
+        .segonnivell{
+            background: tomato;
+            display: block;
+            top: 2rem;
+            font-size: 0.85rem;
+            height: 2rem;
+            border-bottom: solid white 1px;
+        }
+
+
+        .segonnivell:hover{
+            background: violet;
+            
+        }
+
+        div {
+            background-color:purple;
+            margin: 0;
+            padding: 0.5%;
+        }
+
+        .menu{
+            background-color:rgba(191, 145, 255, 0.743);
+            float: left;
+            width: 24%;
+        }
+
+        .contingut{
+            background-color: rgba(191, 145, 255, 0.743);
+            float:left;
+            width: 49%;
+            overflow: scroll;
+            height: 840px;
+        }
+
+        .lateral{
+            background-color:rgba(191, 145, 255, 0.743);
+            float: right;
+            width: 24%;
+        }
+
+        .peu{
+            background-color:rgba(191, 145, 255, 0.743);
+            clear: left;
+            margin-bottom:0;
+
+        }
+
+        .cap{
+            color: white;
+            background-color: purple;
+            padding: 2%;
+
+        }
+
+        h1{
+            text-align: center;
+            margin: 0%;
+        } 
+
+        h2,h3,ul{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cap">
+        <h1>Frankbook</h1>
+        <ul class="navegacio">
+            <li class="primernivell">Opcio 1
+                <ul class="secundari">
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opció 2
+                <ul class="secundari">
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opció 3
+                <ul class="secundari">
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opció 4
+                <ul class="secundari">
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                </ul>
+            </li>
+            <li class="primernivell">Opció 5
+                <ul class="secundari">
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                    <li class="segonnivell">Sub-opció</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <h2>Home</h2>
+        <ul>
+            <li><a href="#p1">Post1</a></li>
+            <li><a href="#p2">Post2</a></li>
+            <li><a href="#p3">Post3</a></li>
+            <li><a href="#p4">Post4</a></li>
+            <li><a href="#p5">Post5</a></li>
+            <li><a href="#p6">Post6</a></li>
+            <li><a href="#p7">Post7</a></li>
+            <li><a href="#p8">Post8</a></li>
+            <li><a href="#p9">Post9</a></li>
+            <li><a href="#p10">Post10</a></li>
+            <li><a href="#p11">Post11</a></li>
+        </ul>
+
+    </div>
+
+    <div class="contingut">
+        <h2>Timeline</h2>
+        <h3 id="p1">Post1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi, cupiditate pariatur sed debitis ut asperiores, illo dolore laborum maxime enim earum aperiam, atque nostrum fuga quasi veniam fugiat rem.</p>
+        <h3 id="p2">Post2</h3>
+        <p>Temporibus minima eaque aut natus. Deserunt dignissimos sint vitae nisi itaque, explicabo alias rem sapiente, tenetur dolorum commodi, hic incidunt quo. Quidem earum hic aperiam incidunt perferendis asperiores est neque.</p>
+        <h3 id="p3">Post3</h3>
+        <p>Vitae error voluptatibus dolore iure repudiandae architecto nihil molestiae quibusdam, eos natus alias repellendus aperiam excepturi minima similique quaerat quae id perspiciatis veritatis dolores dolor? Ex beatae laudantium odio itaque!</p>
+        <h3 id="p4">Post4</h3>
+        <p>Facilis optio modi ducimus nihil quidem, illo consequatur necessitatibus. Neque magni perferendis accusamus aliquam optio libero ex dicta nobis vel, ipsam quis, ipsa sit suscipit sequi delectus eum quisquam accusantium!</p>
+        <h3 id="p5">Post5</h3>
+        <p>Tenetur voluptatum repellendus perspiciatis, nulla similique omnis sint cum neque esse quos odit tempore nemo vitae fuga impedit rerum. Optio laborum magnam vel reiciendis molestiae, sed cumque nulla debitis quasi.</p>
+        <h3 id="p6">Post6</h3>
+        <p>Facilis optio modi ducimus nihil quidem, illo consequatur necessitatibus. Neque magni perferendis accusamus aliquam optio libero ex dicta nobis vel, ipsam quis, ipsa sit suscipit sequi delectus eum quisquam accusantium!</p>
+        <h3 id="p7">Post7</h3>
+        <p>Tenetur voluptatum repellendus perspiciatis, nulla similique omnis sint cum neque esse quos odit tempore nemo vitae fuga impedit rerum. Optio laborum magnam vel reiciendis molestiae, sed cumque nulla debitis quasi.</p>
+        <h3 id="p8">Post8</h3>
+        <p>Facilis optio modi ducimus nihil quidem, illo consequatur necessitatibus. Neque magni perferendis accusamus aliquam optio libero ex dicta nobis vel, ipsam quis, ipsa sit suscipit sequi delectus eum quisquam accusantium!</p>
+        <h3 id="p9">Post9</h3>
+        <p>Tenetur voluptatum repellendus perspiciatis, nulla similique omnis sint cum neque esse quos odit tempore nemo vitae fuga impedit rerum. Optio laborum magnam vel reiciendis molestiae, sed cumque nulla debitis quasi.</p>
+        <h3 id="p10">Post10</h3>
+        <p>Facilis optio modi ducimus nihil quidem, illo consequatur necessitatibus. Neque magni perferendis accusamus aliquam optio libero ex dicta nobis vel, ipsam quis, ipsa sit suscipit sequi delectus eum quisquam accusantium!</p>
+        <h3 id="p11">Post11</h3>
+        <p>Tenetur voluptatum repellendus perspiciatis, nulla similique omnis sint cum neque esse quos odit tempore nemo vitae fuga impedit rerum. Optio laborum magnam vel reiciendis molestiae, sed cumque nulla debitis quasi.</p>
+    </div>
+
+    <div class="lateral">
+        <h2>Contacts</h2>
+    <ul>
+        <li>
+            SampleText1
+        </li>
+        <li>
+            SampleText2
+        </li>
+        <li>
+            SampleText3
+        </li>
+        <li>
+            SampleText4
+        </li>
+    </ul>
+    </div>
+
+    <div class="peu">Peu</div>
+</body>
+</html>
