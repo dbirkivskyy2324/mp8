@@ -2,6 +2,76 @@
     position: relative;
 }
 
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, #0487D9 3%, #7E9CD9 38%,#F29F80 68%, #D9A0CF 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
 .cap{
     top:-600px;
     margin: auto;
@@ -9,7 +79,7 @@
     height: 600px;
     background-color: #d5a384;
     border-radius: 300px 300px 350px 350px/ 350px 350px 350px ;
-    box-shadow: inset 0px 100px 0px #6f4333;
+    box-shadow: inset 0px 100px 0px #73412F;
    clip-path: polygon(20% 0, 80% 0%, 100% 20%, 91% 72%, 64% 93%, 37% 93%, 8% 73%, 0% 20%);
 }
 
@@ -47,10 +117,11 @@
   width: 250px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 -70px 0 #2b201a;
+  box-shadow: 0 -70px 0 #260801;
   left: 57px;
   top: -420px;
   transform: rotate(-50deg);
+  z-index: 9;
       
 }
 
@@ -58,18 +129,18 @@
   width: 120px;
   height: 110px;
   border-radius: 50%;
-  box-shadow: 0 40px 0 #827160;
+  box-shadow: 0 40px 0 #73412F;
   left: -119px;
   top: -29px;
   transform: rotate(-20deg);
-  z-index:-1;
+  z-index: 9;
 }
 
 .flec2{
   width: 210px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 -60px 0 #2b201a;
+  box-shadow: 0 -60px 0 #260801;
   left: 90px;
   top: -50px;
   transform: rotate(100deg);
@@ -79,18 +150,17 @@
   width: 120px;
   height: 110px;
   border-radius: 50%;
-  box-shadow: 0 35px 0 #827160;
-  left: 383px;
-  top: 130px;
-  transform: rotate(65deg);
-  z-index:;
+  box-shadow: 0 35px 0 #8C5B49;
+  left: 190px;
+  top: -31px;
+  transform: rotate(116deg);
 }
 
 .flec4{
   width: 230px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 45px 0 #827160;
+  box-shadow: 0 45px 0 #8C5B49;
   left: 18px;
   top: -490px;
   transform: rotate(210deg);
@@ -100,10 +170,10 @@
   width: 120px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 -40px 0 #827160;
-  left: 210px;
-  top: px;
-  transform: rotate(-160deg);
+  box-shadow: 0 -40px 0 #8C5B49;
+  left: 250px;
+  top: -350px;
+  transform: rotate(-100deg);
   z-index:-1;
 }
 
@@ -111,10 +181,10 @@
   width: 120px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 -40px 0 #827160;
-  left: px;
-  top: px;
-  transform: rotate(-160deg);
+  box-shadow: 0 -40px 0 #8C5B49;
+  left: 281px;
+  top: -473px;
+  transform: rotate(-100deg);
   z-index:-1;
 }
 
@@ -122,10 +192,10 @@
   width: 110px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 -40px 0 #827160;
-  left:px;
-  top: px;
-  transform: rotate(-160deg);
+  box-shadow: 0 -40px 0 #8C5B49;
+  left:305px;
+  top:-591px;
+  transform: rotate(-100deg);
   z-index:-1;
 }
 
@@ -133,7 +203,7 @@
   width: 250px;
   height: 230px;
   border-radius: 50%;
-  box-shadow: 0 45px 0 #6f4333;
+  box-shadow: 0 45px 0 #401D10;
   left: -25px;
   top: -970px;
   transform: rotate(160deg);
@@ -144,18 +214,18 @@
   width: 250px;
   height: 230px;
   border-radius: 50%;
-  box-shadow: 0 45px 0 #6f4333;
-  left: 100px;
-  top: -1065px;
-  transform: rotate(300deg);
-  z-index: -1;
+  box-shadow: 0 45px 0 #401D10;
+  left: 94px;
+  top: -1073px;
+  transform: rotate(295deg);
+  z-index: -9;
 }
 
 .flec10{
   width: 120px;
   height: 110px;
   border-radius: 50%;
-  box-shadow: 0 40px 0 #6f4333;
+  box-shadow: 0 40px 0 #401D10;
   left: 150px;
   top: -1420px;
   transform: rotate(-120deg);
@@ -270,7 +340,6 @@
 .orelles{
   top: 150px;
   width: 450px;
-  display:;
   z-index:-1;
 }
 
@@ -318,7 +387,6 @@
   background-color: #d5a384;
   border-radius: 50%/ 100% 100% 0%;
   border-left: 2px solid;
-  z-index: ;
 }
 
 .ndre{
@@ -374,7 +442,7 @@
   border-radius:300px 300px 0px 0;
   background-color: black;
   bottom: 920px;
-  left: 260px;
+  left: 590px;
   z-index:-9;
 }
 
