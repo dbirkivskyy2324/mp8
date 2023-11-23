@@ -1,0 +1,17 @@
+body{
+    background: #28282B;
+}
+
+ul a{
+    background: gray;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: solid white 1px;
+    border-radius: 30%;
+    float: left;
+    text-decoration: none;
+    margin: 2rem;
+    text-align: center;
+
+}

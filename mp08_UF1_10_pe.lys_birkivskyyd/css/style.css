@@ -5,6 +5,15 @@ body{
     margin: auto;
 }
 
+a{
+    color: #ccc;
+}
+
+a:hover{
+    color: #fff;
+}
+
+
 #barr{
     height: 50px;
     background-color: black;
@@ -13,10 +22,16 @@ body{
 
 #logo{
     margin: 5px 20px 5px 20px;
+    float: left;
 }
 
+#menu{
+    float: left;
+}
+
+
 ul{
-    margin: auto;
+
 }
 
 li{
@@ -33,7 +48,6 @@ li:hover{
     
     float: right;
 }
-
 
 
 .film{
@@ -78,7 +92,7 @@ h5{
 }
 
 .documentals{
-    overflow: hidden;
+    clear: both;
    
 }
 
