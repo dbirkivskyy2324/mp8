@@ -1,8 +1,42 @@
 body{
     background: #28282B;
+    margin: 0;
+    padding: 0;
+}
+
+
+.firstpage{
+    
+    position: relative;
+    background: black;
+    height: 75.5rem;
+    width: 40%;
+
+}
+
+h1{
+    margin: 0;
+    padding: 33.75rem 3.125rem;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 100px;
+}
+
+.secondpage{
+    margin: 0;
+    position: relative;
+    background: white;
+    height: 74.5rem;
+}
+
+a{
+    position: relative;
+    margin: auto;
 }
 
 ul a{
+    margin: 3rem;
     background: gray;
     display: block;
     width: 10rem;
@@ -11,7 +45,7 @@ ul a{
     border-radius: 30%;
     float: left;
     text-decoration: none;
-    margin: 2rem;
     text-align: center;
 
 }
+
