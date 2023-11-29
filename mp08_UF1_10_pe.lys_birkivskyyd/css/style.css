@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #222;
     color: #fff;
-    margin: 15px;
+    margin: 0.9375rem;
 }
 
 a{
@@ -15,7 +15,7 @@ a:hover{
 
 
 #barr{
-    height: 50px;
+    height: 3.125rem;
     background-color: black;
     opacity: 50%;
     position: fixed;
@@ -26,7 +26,7 @@ a:hover{
 }
 
 #logo{
-    margin: 5px 20px 5px 20px;
+    margin: 0.3125rem  1.25rem 0.3125rem  1.25rem;
     float: left;
 }
 
@@ -38,7 +38,7 @@ a:hover{
 li{
     color: #ccc;
     display: inline;
-    margin: 0 5px 0 0;
+    margin: 0 0.3125rem 0 0;
 }
 
 li:hover{
@@ -52,8 +52,8 @@ li:hover{
 
 
 .film{
-    width: 175px;
-    margin: 10px 20px 0 0;
+    width: 10.9375rem;
+    margin: 0.625rem 1.25rem 0 0;
     float: left;
     
 }
@@ -64,30 +64,30 @@ li:hover{
 }
 
 .film img {
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 h2{
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 h3{
 
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ccc;
     margin: 0;
     
 }
 
 h4{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ccc;
     float: left;
     margin: 0;
 }
 
 h5{    
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ccc;
     float: right;
     margin: 0;
