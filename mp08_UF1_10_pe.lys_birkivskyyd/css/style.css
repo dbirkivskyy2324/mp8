@@ -1,20 +1,19 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #222;
     color: #fff;
     margin: 0.9375rem;
 }
 
-a{
+a {
     color: #ccc;
 }
 
-a:hover{
+a:hover {
     color: #fff;
 }
 
-
-#barr{
+#barr {
     height: 3.125rem;
     background-color: black;
     opacity: 50%;
@@ -25,101 +24,89 @@ a:hover{
     z-index: 99999;
 }
 
-#logo{
-    margin: 0.3125rem  1.25rem 0.3125rem  1.25rem;
+#logo {
+    margin: 0.3125rem 1.25rem 0.3125rem 1.25rem;
     float: left;
 }
 
-#menu{
+#menu {
     float: left;
 }
 
-
-li{
+li {
     color: #ccc;
     display: inline;
     margin: 0 0.3125rem 0 0;
 }
 
-li:hover{
+li:hover {
     color: #fff;
 }
 
-#platform{
-    
+#platform {
     float: right;
 }
 
-
-.film{
+.film {
     width: 10.9375rem;
     margin: 0.625rem 1.25rem 0 0;
     float: left;
-    
 }
 
-.film:hover{
+.film:hover {
     opacity: 50%;
-    
 }
 
 .film img {
     border-radius: 0.625rem;
 }
 
-h2{
+h2 {
     margin: 0.625rem;
 }
 
-h3{
-
+h3 {
     font-size: 0.875rem;
     color: #ccc;
     margin: 0;
-    
 }
 
-h4{
+h4 {
     font-size: 0.875rem;
     color: #ccc;
     float: left;
     margin: 0;
 }
 
-h5{    
+h5 {
     font-size: 0.875rem;
     color: #ccc;
     float: right;
     margin: 0;
 }
 
-.documentals{
+.documentals {
     clear: both;
-   
 }
 
-#docv{
+#docv {
     filter: grayscale();
 }
 
-.ppendents{
-    clear: both;
-      
-}
-
-
-.pvistes{
-    clear: both;
-    filter: grayscale();
-}
-
-.sseguint{
+.ppendents {
     clear: both;
 }
 
-.svistes{
+.pvistes {
     clear: both;
     filter: grayscale();
 }
 
+.sseguint {
+    clear: both;
+}
 
+.svistes {
+    clear: both;
+    filter: grayscale();
+}
