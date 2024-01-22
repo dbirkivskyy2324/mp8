@@ -73,15 +73,13 @@ h1 {
 
 #home {
     padding: 40rem 0;
-    background: url(img/gradientanimation.gif) no-repeat;
+    background: url() no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #portfolio {
     padding: 4.375rem 0 4.375rem 0;
-    background-color: rgba(0, 0, 0, 0);
-    background: url(img/gradientanimation.gif) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     filter: grayscale();
@@ -90,9 +88,74 @@ h1 {
 .practica {
     height: 18.75rem;
     margin-bottom: 1.875rem;
-    background: rgba(152, 170, 224, 0.15);
-    border: 1px solid rgb(78, 28, 28);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
     line-height: 18.75rem;
     text-align: center;
     color: white;
+}
+
+.gradient{
+    height: 1095px;
+    width: 1927px;
+    position: relative;
+    margin: 0 auto;
+	overflow: hidden;
+	position: fixed;
+}
+
+.gradient div{
+    position: absolute;
+    border-radius: 50%;
+	animation: gradient 4s infinite;
+}
+
+@keyframes gradient{
+	70%{
+		transform: scale(1.2) translate(50px);
+	}
+}
+
+.gradient div:nth-child(1){
+    height: 100%;
+	width: 80%;
+	background-color: #FF0000;
+	left: -9%;
+	top: 0%;
+}
+
+.gradient div:nth-child(2){
+    height: 80%;
+	width: 70%;
+	background-color: #A900A3;
+	right:40%;
+	top: -50%;
+	animation-delay: 8s;
+}
+
+.gradient div:nth-child(3){
+    height: 65%;
+	width: 85%;
+	background-color: #000000;
+	right:-45%;
+	top: 50%;
+	animation-delay: 0.3s;
+}
+
+.gradient div:nth-child(4){
+    height: 50%;
+	width: 75%;
+	background-color: #ffffff;
+	right:-10%;
+	top: -25%;
+	animation-delay: 1.2s;
+}
+
+.gradient::after{
+	position: absolute;
+	content: "";
+    height: 100%;
+	width: 100%;
+	backdrop-filter: blur(80px);
 }
