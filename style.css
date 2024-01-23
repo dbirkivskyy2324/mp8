@@ -70,7 +70,7 @@ li {
     top: 100%;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 0.0625rem;
     background: #ccc;
     transition: 0.2s;
 }
@@ -115,13 +115,13 @@ h1 {
     line-height: 18.75rem;
     text-align: center;
     color: white;
-    box-shadow: 0 15px 35px rgb(121, 121, 121);
-	letter-spacing: 1px;
+    box-shadow: 0 0.9375rem 2.1875rem rgb(121, 121, 121);
+	letter-spacing: 0.0625rem;
 	transition: 0.5s;
 }
 
 .practica:hover {
-	letter-spacing: 3px;
+	letter-spacing: 0.1875rem;
 }
 
 .practica::before {
