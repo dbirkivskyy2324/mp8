@@ -60,6 +60,26 @@ li {
     list-style: none;
 }
 
+#menu a {
+    position: relative;
+}
+    
+#menu a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ccc;
+    transition: 0.2s;
+}
+    
+#menu a:hover::before {
+    width: 100%;
+    
+}
+
 h1 {
     margin: 0;
     padding: 33.75rem 3.125rem;
@@ -86,19 +106,45 @@ h1 {
 }
 
 .practica {
+    font-weight: bold;
     height: 18.75rem;
     margin-bottom: 1.875rem;
     background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
+    border: 0.0625rem solid rgb(255, 255, 255);
+    border-radius: 0.625rem;
     line-height: 18.75rem;
     text-align: center;
     color: white;
+    box-shadow: 0 15px 35px rgb(121, 121, 121);
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.practica:hover {
+	letter-spacing: 3px;
+}
+
+.practica::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255,255,255,0.15),transparent);
+	transform: skewX(45deg) translateX(0);
+	transition: 0.5s;
+    display: none;
+}
+
+.practica:hover::before {
+	transform: skewX(45deg) translateX(200%);
+    display: none;
 }
 
 .gradient{
-    height: 1095px;
-    width: 1927px;
+    height: 68.4375rem;
+    width: 120.4375rem;
     position: relative;
     margin: 0 auto;
 	overflow: hidden;
@@ -113,7 +159,7 @@ h1 {
 
 @keyframes gradient{
 	70%{
-		transform: scale(1.2) translate(50px);
+		transform: scale(1.2) translate(3.125rem);
 	}
 }
 
@@ -157,5 +203,5 @@ h1 {
 	content: "";
     height: 100%;
 	width: 100%;
-	backdrop-filter: blur(80px);
+	backdrop-filter: blur(5rem);
 }
