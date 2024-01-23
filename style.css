@@ -82,7 +82,7 @@ h1 {
     padding: 4.375rem 0 4.375rem 0;
     background-size: cover;
     background-attachment: fixed;
-    filter: grayscale();
+    backdrop-filter: grayscale();
 }
 
 .practica {
