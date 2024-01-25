@@ -1,52 +1,16 @@
-body {
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body,
-html {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-#navbar {
-    height: 3.125rem;
-    background-color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 99999;
-}
-
-#logo {
-    margin: 0.125rem 1.25rem 0.3125rem 1.25rem;
-    width: 2.1875rem;
-    height: 2.8125rem;
-    float: left;
-}
-
-#creator {
-    float: left;
-    margin: 0.875rem 0 0 0;
-}
-
+/* ----------------- GENÈRIC ----------------------- */
 a {
     color: #ccc;
     text-decoration: none;
-}
-
-#menu {
-    padding-right: 1.25rem;
-    color: #ccc;
-    display: inline;
-    float: right;
-    margin: 0.875rem 0.3125rem 0 0;
-}
-
-#menu li {
-    display: inline;
 }
 
 ul {
@@ -60,26 +24,6 @@ li {
     list-style: none;
 }
 
-#menu a {
-    position: relative;
-}
-    
-#menu a::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 0.0625rem;
-    background: #ccc;
-    transition: 0.2s;
-}
-    
-#menu a:hover::before {
-    width: 100%;
-    
-}
-
 h1 {
     margin: 0;
     padding: 33.75rem 3.125rem;
@@ -91,6 +35,62 @@ h1 {
     top: -31.25rem;
 }
 
+/* ----------------- NAVBAR ----------------------- */
+#navbar {
+    height: 3.125rem;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+#navbar #logo {
+    margin: 0.125rem 1.25rem 0.3125rem 1.25rem;
+    width: 2.1875rem;
+    height: 2.8125rem;
+    float: left;
+}
+
+#navbar #creator {
+    float: left;
+    margin: 0.875rem 0 0 0;
+}
+
+
+
+#navbar #menu {
+    padding-right: 1.25rem;
+    color: #ccc;
+    display: inline;
+    float: right;
+    margin: 0.875rem 0.3125rem 0 0;
+}
+
+#navbar #menu li {
+    display: inline;
+}
+
+#navbar #menu a {
+    position: relative;
+}
+    
+#navbar #menu a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.0625rem;
+    background: #ccc;
+    transition: 0.2s;
+}
+#navbar #menu a:hover::before {
+    width: 100%; 
+}
+
+/* ----------------- HOME ----------------------- */
 #home {
     padding: 40rem 0;
     background: url() no-repeat;
@@ -98,14 +98,15 @@ h1 {
     background-attachment: fixed;
 }
 
-#portfolio {
+#home #portfolio {
     padding: 4.375rem 0 4.375rem 0;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-backdrop-filter: grayscale();
     backdrop-filter: grayscale();
 }
 
-.practica {
+#home #portfolio .practica {
     font-weight: bold;
     height: 18.75rem;
     margin-bottom: 1.875rem;
@@ -118,29 +119,32 @@ h1 {
     box-shadow: 0 0.9375rem 2.1875rem rgb(121, 121, 121);
 	letter-spacing: 0.0625rem;
 	transition: 0.5s;
+    position: relative;
 }
 
-.practica:hover {
+#home #portfolio .practica:hover {
 	letter-spacing: 0.1875rem;
 }
 
-.practica::before {
+#home #portfolio .practica::before {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
+    right: 0;
+    bottom: 0;
 	width: 50%;
 	height: 100%;
 	background: linear-gradient(to left, rgba(255,255,255,0.15),transparent);
 	transform: skewX(45deg) translateX(0);
 	transition: 0.5s;
-    display: none;
 }
 
-.practica:hover::before {
+#home #portfolio .practica:hover::before {
 	transform: skewX(45deg) translateX(200%);
-    display: none;
 }
+
+/* ----------------- FONS ----------------------- */
 
 .gradient{
     height: 71.1875rem;
@@ -203,5 +207,6 @@ h1 {
 	content: "";
     height: 100%;
 	width: 100%;
+    -webkit-backdrop-filter: blur(5rem);
 	backdrop-filter: blur(5rem);
 }
