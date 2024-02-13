@@ -55,8 +55,38 @@
             transform-origin: left;
             animation: jacobo linear;
             animation-timeline: scroll();
-            }
+         }
+         
+         ul{
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+         }
 
+         li{
+            height: 3rem;
+            width: 3rem;
+            background: pink;
+            float: left;
+            display: inline-block;
+            margin: 1rem;
+            text-align: center;
+            line-height: 3rem;
+            border-radius: 50%;
+         }
+
+         #petit{
+            font-size: 1rem;
+         }
+
+         #mitja{
+            font-size: 1.5rem;
+         }
+
+         #gran{
+            font-size: 2rem;
+         }
          @keyframes jacobo{
             to {
                scale:1 1;
@@ -91,16 +121,23 @@
 </head>
 <body>
    <div class="progres"></div>
+   <ul>
+      <li id="petit">-</li>
+      <li id="mitja">=</li>
+      <li id="gran">+</li>
+   </ul>
       <h1>APP</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium dignissimos voluptate ea veniam vel aspernatur repellendus sit ipsam deserunt accusamus, itaque fugiat molestiae et voluptatibus quae nostrum ipsa. Ad!</p>
 </body>
 </html>
+<script src="js/font.js"></script>
+<script src="nightmode.js"></script>
