@@ -3,21 +3,17 @@
     padding: 0;
     margin: 0;
 }
-
 .contingut{
     width: 1665px;
     margin: 0 auto;
 }
-
 .centrador{
     width: 1665p;
     overflow: hidden;
 }
-
 .contacte{
     height: 195px;
 }
-
 li{
     display: inline-block;
     border-radius: 50%;
@@ -28,118 +24,91 @@ li{
     background-repeat: no-repeat;
     text-align: center;
     line-height: 200px;
-    
 }
-
 ul{
     width: 1060px;
     margin: auto;
     padding: 36px;
-
 }
-
 #contacte01{
     background-image: url(../img/ifpagram_07.png);
-
 }
-
 #contacte01:hover{
     background-size: 200%;
     background-position: center;
 }
-
 #contacte02{
     background-image: url(../img/ifpagram_09.png);
 }
-
 #contacte03{
     background-image: url(../img/ifpagram_07.png);
 }
-
 #contacte04{
     background-image: url(../img/ifpagram_09.png);
 }
-
 #contacte05{
     background-image: url(../img/ifpagram_07.png);
 }
-
 #contacte06{
     background-image: url(../img/ifpagram_09.png);
 }
-
 #contacte07{
     background-image: url(../img/ifpagram_07.png);
 }
-
 #contacte08{
     background-image: url(../img/ifpagram_09.png);
 }
-
 #contacte09{
     background-image: url(../img/ifpagram_07.png);
 }
-
 #contacte10{
     background-image: url(../img/ifpagram_09.png);
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .logo{
     float: left;
     margin: 72px;
-
 }
-
 .user{
     float: right;
     padding: 72px 150px 0px 0px;
 }
-
 .nav{
     margin: auto;
     padding: 72px 0 0 0;
 }
-
 .nav ul{
     height: 50px;
     width: 296px;
     padding: 0;
 }
-
 .nav ul li{
     width: 42px;
     height: 42px;
     margin: 4px;
 }
-
 .home{
     background-image: url(../img/ifpagram_08.png);
     background-size: 600%;
     background-position: 0px 2px;
 }
-
 .search{
     background-image: url(../img/ifpagram_08.png);
     background-size: 600%;
     background-position: -71px 3px;
 }
-
 .tv{
     background-image: url(../img/ifpagram_08.png);
     background-size: 600%;
     background-position: -138px 4px;
 }
-
 .like{
     background-image: url(../img/ifpagram_08.png);
     background-size: 600%;
     background-position: -207px 4px;
 }
-
 .post{
     width: 535px;
     margin: 0 auto;
@@ -149,21 +118,17 @@ body{
     float: left;
     height: 600px;
 }
-
 .post img{
     width: 535px;
 }
-
 .post div{
     width: 150px;
     height: 70px;
     margin: 5px;
 }
-
 .post .postejador{
     float: left;
 }
-
 .post .postejador img{
     width: 50px;
     border-radius: 50%;
@@ -172,21 +137,17 @@ body{
 .post .reaccions{
     float: right;
 }
-
 .post h5{
     height: 25px;
     line-height: 25px;
     font-weight: 600;
 }
-
 .post h6{
     height: 25px;
 }
-
 a:link{
     opacity: 100%;
 }
-
 a:hover{
     opacity: 60%;
 }
