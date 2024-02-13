@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+ *{
+     margin: 0;
+     padding: 0;
+}
+ body{
+     background-image: url(../img/fons.jpg);
+     background:linear-gradient(215deg, pink, pink 60%, transparent 60%, transparent);
+     background-repeat: no-repeat;
+}
+ body, html{
+     font-family: Arial, Helvetica, sans-serif;
+}
+ .animation{
+     text-align: center;
+}
+ .photo{
+     height: 200px;
+     margin: 10px;
+     float: left;
+     background: white;
+     opacity: 50%;
+}
+ .photo:hover{
+     opacity: 100%;
+     animation: rotacio;
+     animation-duration: 1s;
+}
+ @keyframes rotacio{
+     0%{
+         transform: rotate(0deg);
+    }
+     100%{
+         transform: rotate(360deg);
+    }
+}
+ .container{
+     height: auto;
+     width: 810px;
+     margin: 0 auto;
+     overflow: hidden;
+}
+ .peu{
+     height: 220px;
+     position: relative;
+     text-align: center;
+     justify-content: bottom;
+}
+ h1{
+     padding-top: 20px;
+     position: relative;
+     text-align: center;
+     font-size: 4rem;
+}
+ h3{
+     margin: 1px 10px;
+     font-size: 1rem;
+     font-weight: lighter;
+     justify-content: center;
+}
+ 
